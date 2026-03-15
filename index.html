@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ralph Adu-Twum's Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Section 1 – Personal Info -->
+  <header class="site-header">
+    <h1>Ralph Adu-Twum</h1>
+    <p class="tagline">ralphadu-twum@hotmail.co.uk</p>
+    <nav class="nav-links">
+      <a href="#bio">Bio</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="header-image-container">
+    <img src="assets/Suit Photo.jpg" alt="Ralph Adu-Twum Profile" class="header-image">
+  </div>
+
+
+  <!-- Section 2 – Bio -->
+  <section id="bio" class="bio-section">
+    <h2>Bio</h2>
+
+    <p>
+      I am an aspiring Data Analyst and recent graduate of the Generation Data Analytics 
+      Bootcamp, where I built a strong technical foundation in SQL, Python, and Power BI.
+    </p>
+      
+    <p>
+      My interest in data began with a natural curiosity for patterns and 
+      problem-solving, particularly when doing chemical engineering projects at 
+      university where I looked to boost efficiency and reduce waste. 
+      Seeing how data could influence operational decisions sparked my desire to pursue 
+      analytics professionally. 
+    </p>
+    <p>
+      Alongside my technical training, my background in optics and customer-facing roles has
+      developed my communication skills and attention to detail Whether ensuring precision in a 
+      pharmacy setting or guiding customers through frame selections in an optical one, 
+      I consistently translated complex needs into practical, actionable solutions. 
+    </p>
+    <p>
+      Working in fast-paced environments has enhanced my problem-solving abilities 
+      and reinforced the importance of collaboration. Curious, analytical, and growth-oriented, 
+      I am eager to contribute to data-driven organisations while continuing to develop my technical 
+      and professional expertise.
+
+    </p>
+
+    <h3>Skills & Preferred Tools</h3>
+    <ul class="skills-list">
+      <li>Data Cleaning</li>
+      <li>Excel</li>
+      <li>Python</li>
+      <li>SQL</li>
+      <li>MS Power BI</li>
+      <li>Communication</li>
+      <li>Teamwork</li>
+      <li>Problem solving</li>
+          
+    </ul>
+  </section>
+
+  <!-- Section 3 – Projects -->
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>📈 Excel</h3>
+      <p>Using Excel to create a dashboard using Pivot Tables and Pivot Charts to 
+        identify trends and insights around the weekly sale of berries in a North America store.  
+      </p>
+      <!-- New image added here -->
+      <img src="assets/Excel Dashboard 2.png" alt="Berries - Excel Screenshot" class="project-image">
+      <a href="https://github.com/ahehir101/alien_space_invader_game" target="_blank">View Excel file on GitHub</a>
+    </div>
+
+  <div class="project">
+    <h3> 🧠Python</h3>
+    <p>
+      Analysing population statistics as part of a fictional company GlobalTech.
+    </p>
+      <!-- New image added here -->
+      <img src="assets/Python Task.png" alt="Python Code Screenshot" class="project-image">
+      <a href="https://github.com/ahehir101/alien_space_invader_game" target="_blank">View Source Code on GitHub</a>
+    </p>
+  </div>
+
+
+  <div class="project">
+    <h3>📊 Power BI Sales Dashboard</h3>
+    <p>This dashboard visualizes sales performance of an electronics company.</p>
+    <img src="assets/Power BI report.png" alt="Power BI Report Screenshot" class="project-image">
+    <a href="https://github.com/ahehir101/alien_space_invader_game" target="_blank">View Project Overview on GitHub</a>
+  </div>
+
+
+  <div class="project">
+    <h3>🧠 SQL Data Analysis Showcase</h3>
+    <p>This section demonstrates SQL JOIN skills.</p>
+
+    <pre><code class="sql">
+--      Displays the port had the longest average docking time in 2015
+--      from a JOIN of a Ports and details of Shipment tables. 
+
+SELECT TOP (1) p.port_name, p.avg_docking_time_hours 
+FROM Ports AS p
+INNER JOIN Shipments AS s
+ON p.port_id = s.origin_port_id
+WHERE s.shipment_year = 2015
+ORDER BY p.avg_docking_time_hours DESC;
+    </code></pre>
+  </div>
+
+
+    <div class="project">
+      <h3>🧠 AdventureWorks 2019 - Group Project</h3>
+      <p>A project using both SQL and Python to conduct a comprehensive analysis
+        of the AdventureWorks 2019 dataset.</p>
+      <img src="assets/Interim Projcet.png" alt="Interim Project Report Screenshot" class="project-image">
+      <a href="https://github.com/ahehir101/alien_space_invader_game" target="_blank">View Source Code on GitHub</a>
+    </div>
+
+
+    <div class="project">
+      <h3>📊 Olist - Group Project</h3>
+      <p>A project using Power BI to conduct an explorative analysis
+        of a Brazilian e-commerce.</p>
+      <img src="assets/Olist Dashboard 1.png" alt="Group Project Dashboard Screenshot" class="project-image">
+      <a href="https://github.com/ahehir101/alien_space_invader_game" target="_blank">View Project Overview on GitHub</a>
+    </div>
+
+
+    <div class="project">
+      <h3>📊 Spotify - Individual Project</h3>
+      <p>A project using Excel and Power BI to conduct an analysis of the Top
+        100 Most Streamed Songs on Spotify.</p>
+      <img src="assets/Individual Project .png" alt="Individual Project Dashboard Screenshot" class="project-image">
+      <a href="https://github.com/ahehir101/alien_space_invader_game" target="_blank">View Project Overview on GitHub</a>
+    </div>
+  </section>
+
+
+  <!-- Section 4 – Contact -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xdkdpbaj" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Ralph Adu-Twum. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
