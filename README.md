@@ -51,4 +51,4 @@ To view or edit this project locally:
 1. Clone the repo:
    ```bash
    git clone https://github.com/ralphda123/ralphda123.github.io.git
-   cd ahehir101.github.io
+   cd ralphda123.github.io
