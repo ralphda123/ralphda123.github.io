@@ -2,7 +2,7 @@
 
 👋 Welcome to my personal portfolio website, built using HTML and CSS and hosted on **GitHub Pages**.
 
-📍 **Live Site**: [https://ahehir101.github.io](https://ahehir101.github.io)
+📍 **Live Site**: [https://ralphda123.github.io/](https://ralphda123.github.io/)
 
 ---
 
@@ -50,5 +50,5 @@ To view or edit this project locally:
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/ahehir101/ahehir101.github.io.git
+   git clone https://github.com/ralphda123/ralphda123.github.io.git
    cd ahehir101.github.io
