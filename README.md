@@ -1,4 +1,4 @@
-# Adrian Hehir – Portfolio Website
+# Ralph Adu-Twum – Portfolio Website
 
 👋 Welcome to my personal portfolio website, built using HTML and CSS and hosted on **GitHub Pages**.
 
