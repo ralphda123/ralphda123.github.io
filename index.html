@@ -78,7 +78,7 @@
       </p>
       <!-- New image added here -->
       <img src="assets/Excel Dashboard 2.png" alt="Berries - Excel Screenshot" class="project-image">
-      <a href="https://github.com/ahehir101/alien_space_invader_game" target="_blank">View Excel file on GitHub</a>
+      <a href="https://github.com/ralphda123/berries_excel" target="_blank">View Excel file on GitHub</a>
     </div>
 
   <div class="project">
@@ -88,7 +88,7 @@
     </p>
       <!-- New image added here -->
       <img src="assets/Python Task.png" alt="Python Code Screenshot" class="project-image">
-      <a href="https://github.com/ahehir101/alien_space_invader_game" target="_blank">View Source Code on GitHub</a>
+      <a href="https://github.com/ralphda123/python" target="_blank">View Source Code on GitHub</a>
     </p>
   </div>
 
@@ -97,7 +97,7 @@
     <h3>📊 Power BI Sales Dashboard</h3>
     <p>This dashboard visualizes sales performance of an electronics company.</p>
     <img src="assets/Power BI report.png" alt="Power BI Report Screenshot" class="project-image">
-    <a href="https://github.com/ahehir101/alien_space_invader_game" target="_blank">View Project Overview on GitHub</a>
+    <a href="https://github.com/ralphda123/PowerBI" target="_blank">View Project Overview on GitHub</a>
   </div>
 
 
@@ -106,15 +106,14 @@
     <p>This section demonstrates SQL JOIN skills.</p>
 
     <pre><code class="sql">
---      Displays the port had the longest average docking time in 2015
---      from a JOIN of a Ports and details of Shipment tables. 
+--      Displays the average South American population in 2000
+--      from a JOIN of a countries table and populations statistics table. 
 
-SELECT TOP (1) p.port_name, p.avg_docking_time_hours 
-FROM Ports AS p
-INNER JOIN Shipments AS s
-ON p.port_id = s.origin_port_id
-WHERE s.shipment_year = 2015
-ORDER BY p.avg_docking_time_hours DESC;
+SELECT AVG(p.population) AS avg_pop_south_america
+FROM countries AS c
+INNER JOIN population_years AS p
+ON c.id = p.country_id
+WHERE continent = 'South America' AND year = 2000;
     </code></pre>
   </div>
 
@@ -124,7 +123,7 @@ ORDER BY p.avg_docking_time_hours DESC;
       <p>A project using both SQL and Python to conduct a comprehensive analysis
         of the AdventureWorks 2019 dataset.</p>
       <img src="assets/Interim Projcet.png" alt="Interim Project Report Screenshot" class="project-image">
-      <a href="https://github.com/ahehir101/alien_space_invader_game" target="_blank">View Source Code on GitHub</a>
+      <a href="https://github.com/ralphda123/GroupProject" target="_blank">View Source Code on GitHub</a>
     </div>
 
 
@@ -133,7 +132,7 @@ ORDER BY p.avg_docking_time_hours DESC;
       <p>A project using Power BI to conduct an explorative analysis
         of a Brazilian e-commerce.</p>
       <img src="assets/Olist Dashboard 1.png" alt="Group Project Dashboard Screenshot" class="project-image">
-      <a href="https://github.com/ahehir101/alien_space_invader_game" target="_blank">View Project Overview on GitHub</a>
+      <a href="https://github.com/ralphda123/GroupProject2" target="_blank">View Project Overview on GitHub</a>
     </div>
 
 
@@ -142,7 +141,7 @@ ORDER BY p.avg_docking_time_hours DESC;
       <p>A project using Excel and Power BI to conduct an analysis of the Top
         100 Most Streamed Songs on Spotify.</p>
       <img src="assets/Individual Project .png" alt="Individual Project Dashboard Screenshot" class="project-image">
-      <a href="https://github.com/ahehir101/alien_space_invader_game" target="_blank">View Project Overview on GitHub</a>
+      <a href="https://github.com/ralphda123/Individual_Project" target="_blank">View Project Overview on GitHub</a>
     </div>
   </section>
 
